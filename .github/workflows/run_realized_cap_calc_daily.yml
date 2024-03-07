@@ -4,10 +4,8 @@ on:
   push:
     branches:
       - main
-    schedule:
-      - cron: "59 20 * * 1-7"
-    paths:
-      - "uploads/**"
+  schedule:
+    - cron: "03 21 * * 1-7"
 
 jobs:
   build:
