@@ -79,7 +79,6 @@ def main():
     # Concatenate all the individual DataFrames into a single one
     final_df = pd.concat(result_dfs, ignore_index=True)
     
-    # file_path = 'degen_realized_balance.csv'
     print("Saving the result to a CSV file...")
     file_path = os.path.join(os.path.dirname(__file__), '..', 'uploads/', 'degen_realized_balance.csv')
     final_df.to_csv(file_path, index=False)
